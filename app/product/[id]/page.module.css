@@ -1,0 +1,140 @@
+.container {
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.breadcrumbLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbCategory {
+    text-transform: capitalize;
+}
+
+.breadcrumbTitle {
+    font-weight: 500;
+    color: hsl(var(--foreground));
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.imageSection {
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImage {
+    object-fit: contain;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+.categoryBadge {
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.productTitle {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: hsl(var(--foreground));
+}
+
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.starIcon {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.starFilled {
+    color: #facc15;
+    fill: #facc15;
+}
+
+.starMuted {
+    color: hsl(var(--muted-foreground));
+}
+
+.ratingCount {
+    color: hsl(var(--muted-foreground));
+    font-size: 0.875rem;
+}
+
+.productPrice {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: hsl(var(--primary));
+    margin-bottom: 1.5rem;
+}
+
+.detailsSeparator {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: hsl(var(--border));
+    height: 1px;
+}
+
+.descriptionHeading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: hsl(var(--foreground));
+}
+
+.productDescription {
+    color: hsla(var(--foreground) / 0.8);
+    margin-bottom: 1.5rem;
+}
+
+.addToCartButton {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.cartIcon {
+    margin-right: 0.5rem;
+    height: 1.25rem;
+    width: 1.25rem;
+}
